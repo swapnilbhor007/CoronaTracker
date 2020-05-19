@@ -3030,7 +3030,7 @@ cursor: pointer;
 }
 
 .about-content {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   padding: 90px 0px;
   text-align: center;
 }

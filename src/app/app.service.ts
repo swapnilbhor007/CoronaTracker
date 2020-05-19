@@ -16,7 +16,7 @@ export class TrackerService {
 
     getCases(): Observable<ICase[]> {
         return this.httpClient.get<ICase[]>(this.dataUrl).pipe(
-            map((cases: ICase[]) => cases.filter(t => new Date(t.eventDate).toDateString() == new Date().toDateString())),
+           // map((cases: ICase[]) => cases.filter(t => new Date(t.eventDate).toDateString() == new Date().toDateString())),
             //tap(data => console.log('Treks:' + JSON.stringify(data))),
             catchError(this.handleError)
         )

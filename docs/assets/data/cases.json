@@ -37,12 +37,12 @@
 {
     "id" : 4,
     "location": "Kalyan-Dombivali",
-    "total": 530,
+    "total": 568,
     "newcases": "",
-    "deaths": 11,
+    "deaths": 12,
     "newdeaths": "",
-    "recovered": 196,
-    "active": 323,
+    "recovered": 214,
+    "active": 342,
     "tests": "",
     "eventDate": "5/19/2020"
 },

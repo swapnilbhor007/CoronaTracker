@@ -8,7 +8,7 @@ import { TrackerService } from './app.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Corona Tracker';
+  title = 'Corona Meter';
   cases: ICase[];
   errorMessage: string
 

@@ -73,13 +73,13 @@
 {
     "id" : 7,
     "location": "Mira Bhayander",
-    "total": 390,
-    "newcases": 14,
-    "deaths": 11,
-    "newdeaths": "",
-    "recovered": 237,
-    "active": 142,
-    "tests": "",
+    "total": 403,
+    "newcases": 13,
+    "deaths": 12,
+    "newdeaths": 1,
+    "recovered": 252,
+    "active": 139,
+    "tests": 2007,
     "eventDate": "5/21/2020"
 },
 {

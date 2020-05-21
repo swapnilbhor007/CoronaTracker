@@ -1,50 +1,50 @@
 [{
     "id" : 1,
     "location": "Badlapur",
-    "total": 124,
-    "newcases": 5,
-    "deaths": 2,
-    "newdeaths": 0,
-    "recovered": 40,
-    "active": 82,
+    "total": 138,
+    "newcases": 14,
+    "deaths": 3,
+    "newdeaths": 1,
+    "recovered": 41,
+    "active": 94,
     "tests": 350,
-    "eventDate": "5/20/2020"
+    "eventDate": "5/21/2020"
 },
 {
     "id" : 2,
     "location": "Ambernath",
     "total": 48,
-    "newcases": 12,
+    "newcases": 1,
     "deaths": 1,
     "newdeaths": "",
-    "recovered": 14,
-    "active": 34,
-    "tests": 439,
-    "eventDate": "5/19/2020"
+    "recovered": 16,
+    "active": 31,
+    "tests": 482,
+    "eventDate": "5/21/2020"
 },
 {
     "id" : 3,
     "location": "Ulhasnagar",
-    "total": 137,
-    "newcases": 10,
+    "total": 144,
+    "newcases": 7,
     "deaths": 5,
     "newdeaths": "",
     "recovered": 33,
-    "active": 104,
+    "active": 106,
     "tests": "",
-    "eventDate": "5/19/2020"
+    "eventDate": "5/20/2020"
 },
 {
     "id" : 4,
     "location": "Kalyan-Dombivali",
-    "total": 594,
-    "newcases": 26,
-    "deaths": 15,
-    "newdeaths": "",
-    "recovered": 227,
-    "active": 352,
+    "total": 642,
+    "newcases": 48,
+    "deaths": 17,
+    "newdeaths": 2,
+    "recovered": 242,
+    "active": 383,
     "tests": "",
-    "eventDate": "5/20/2020"
+    "eventDate": "5/21/2020"
 },
 {
     "id" : 5,
@@ -61,14 +61,14 @@
 {
     "id" : 6,
     "location": "Navi Mumbai",
-    "total": 1364,
-    "newcases": 43,
+    "total": 1422,
+    "newcases": 58,
     "deaths": 45,
     "newdeaths": "",
-    "recovered": 532,
-    "active": 787,
+    "recovered": 548,
+    "active": 829,
     "tests": "",
-    "eventDate": "5/20/2020"
+    "eventDate": "5/21/2020"
 },
 {
     "id" : 7,
@@ -85,25 +85,25 @@
 {
     "id" : 8,
     "location": "Vasai Virar",
-    "total": 386,
-    "newcases": 19,
+    "total": 410,
+    "newcases": 24,
     "deaths": 17,
     "newdeaths": "",
-    "recovered": 209,
-    "active": 160,
-    "tests": 2060,
-    "eventDate": "5/20/2020"
+    "recovered": 211,
+    "active": 182,
+    "tests": 2794,
+    "eventDate": "5/21/2020"
 },
 {
     "id" : 9,
     "location": "Panvel",
-    "total": 271,
-    "newcases": 12,
-    "deaths": 10,
-    "newdeaths": 2,
-    "recovered": 125,
-    "active": 136,
+    "total": 318,
+    "newcases": 13,
+    "deaths": 14,
+    "newdeaths": "",
+    "recovered": 167,
+    "active": 137,
     "tests": 1912,
-    "eventDate": "5/18/2020"
+    "eventDate": "5/21/2020"
 }
 ]

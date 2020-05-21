@@ -81,4 +81,29 @@
     "active": 142,
     "tests": "",
     "eventDate": "5/20/2020"
-}]
+},
+{
+    "id" : 8,
+    "location": "Vasai Virar",
+    "total": 386,
+    "newcases": 19,
+    "deaths": 17,
+    "newdeaths": "",
+    "recovered": 209,
+    "active": 160,
+    "tests": 2060,
+    "eventDate": "5/20/2020"
+},
+{
+    "id" : 9,
+    "location": "Panvel",
+    "total": 271,
+    "newcases": 12,
+    "deaths": 10,
+    "newdeaths": 2,
+    "recovered": 125,
+    "active": 136,
+    "tests": 1912,
+    "eventDate": "5/18/2020"
+}
+]

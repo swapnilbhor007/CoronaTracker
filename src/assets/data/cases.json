@@ -49,26 +49,26 @@
 {
     "id" : 5,
     "location": "Thane",
-    "total": 1560,
-    "newcases": 97,
-    "deaths": 61,
-    "newdeaths": 4,
-    "recovered": 576,
-    "active": 923,
+    "total": 1757,
+    "newcases": 197,
+    "deaths": 63,
+    "newdeaths": 2,
+    "recovered": 586,
+    "active": 1108,
     "tests": "",
-    "eventDate": "5/21/2020"
+    "eventDate": "5/22/2020"
 },
 {
     "id" : 6,
     "location": "Navi Mumbai",
-    "total": 1422,
-    "newcases": 58,
-    "deaths": 47,
+    "total": 1487,
+    "newcases": 65,
+    "deaths": 49,
     "newdeaths": 2,
-    "recovered": 548,
-    "active": 827,
+    "recovered": 620,
+    "active": 818,
     "tests": "",
-    "eventDate": "5/21/2020"
+    "eventDate": "5/22/2020"
 },
 {
     "id" : 7,

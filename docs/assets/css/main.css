@@ -1229,7 +1229,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .progress-table .serial {
-  width: 10%;
+  width: 8%;
   padding-left: 30px;
 }
 
@@ -1238,7 +1238,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .progress-table .count {
-  width: 10%;
+  width: 12%;
 }
 
 /* .progress-table .count.total{

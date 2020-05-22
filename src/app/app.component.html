@@ -70,11 +70,11 @@
     </div>
   </div>
   <div>
-    <h4>Corona cases as of {{cases[0].eventDate | date:'mediumDate'}}</h4>
+    <h4>Corona cases as of {{ todaysDate | date:'mediumDate'}}</h4>
   </div>
   <div class="progress-table-wrap">
     <div class="progress-table">
-      <div class="table-head sticky">
+      <div class="table-head">
         <div class="serial">#</div>
         <div class="location">Location<i (click)='this.sortCases("location")' [ngClass]="setSortClass()"></i></div>
         <div class="count">Total<i (click)='this.sortCases("total")' [ngClass]="setSortClass()"></i></div>

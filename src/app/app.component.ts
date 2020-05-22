@@ -12,11 +12,13 @@ export class AppComponent implements OnInit {
   cases: ICase[];
   errorMessage: string;
   sortOrder: string = "DESC";
+  todaysDate: Date;
 
   constructor(private trackerService: TrackerService) { }
 
   ngOnInit() {
     this.getCases();
+    this.todaysDate = new Date();
   }
 
   getCases() {

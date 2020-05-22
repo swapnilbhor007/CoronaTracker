@@ -97,13 +97,13 @@
 {
     "id" : 9,
     "location": "Panvel",
-    "total": 318,
-    "newcases": 13,
-    "deaths": 14,
-    "newdeaths": "",
-    "recovered": 167,
-    "active": 137,
-    "tests": 1912,
-    "eventDate": "5/21/2020"
+    "total": 332,
+    "newcases": 14,
+    "deaths": 15,
+    "newdeaths": 1,
+    "recovered": 182,
+    "active": 135,
+    "tests": 2156,
+    "eventDate": "5/22/2020"
 }
 ]

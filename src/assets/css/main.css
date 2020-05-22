@@ -1225,21 +1225,33 @@ h1, h2, h3, h4, h5, h6 {
 .progress-table {
   background: #fff;
   padding: 15px 0px 30px 0px;
-  min-width: 800px;
+  min-width: 600px;
 }
 
 .progress-table .serial {
-  width: 11.83%;
+  width: 10%;
   padding-left: 30px;
 }
 
 .progress-table .location {
-  width: 28.07%;
+  width: 20%;
 }
 
 .progress-table .count {
-  width: 19.74%;
+  width: 10%;
 }
+
+/* .progress-table .count.total{
+  font-weight: 550!important;
+}
+
+.progress-table .count.deaths{
+  color: #eb6b55!important;
+}
+
+.progress-table .count.recovered{
+  color: #20b85a!important;
+} */
 
 .progress-table .percentage {
   width: 40.36%;
@@ -1250,11 +1262,16 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
+.progress-table .table-head i{
+  padding: 5px;
+  cursor: pointer;
+}
+
 .progress-table .table-head .serial, .progress-table .table-head .location, .progress-table .table-head .count, .progress-table .table-head .percentage {
   color:#FFF;
   line-height: 40px;
   /* text-transform: uppercase; */
-  font-weight: 550;
+  font-weight: 550!important;
   background-color: #f8b600;
 }
 

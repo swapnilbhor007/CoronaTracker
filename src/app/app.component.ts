@@ -8,9 +8,10 @@ import { TrackerService } from './app.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Corona Meter';
+  title = 'Corona Tracker';
   cases: ICase[];
-  errorMessage: string
+  errorMessage: string;
+  sortOrder: string = "DESC";
 
   constructor(private trackerService: TrackerService) { }
 
@@ -20,8 +21,29 @@ export class AppComponent implements OnInit {
 
   getCases() {
     this.trackerService.getCases().subscribe({
-      next: cases => this.cases = cases,
+      next: cases => { this.cases = cases; this.sortCases("total"); },
       error: err => this.errorMessage = err
     });
+  }
+
+  setSortClass(): string {
+    return this.sortOrder == 'ASC' ? 'fa fa-sort-down' : 'fa fa-sort-up';
+  }
+
+  sortCases<T>(propName: keyof ICase): void {
+    this.cases.sort((a, b) => {
+      if (a[propName] < b[propName])
+        return -1;
+      if (a[propName] > b[propName])
+        return 1;
+      return 0;
+    });
+
+    if (this.sortOrder === "DESC") {
+      this.cases.reverse();
+      this.sortOrder = "ASC";
+    } else {
+      this.sortOrder = "DESC";
+    }
   }
 }

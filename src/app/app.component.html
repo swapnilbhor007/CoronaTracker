@@ -76,23 +76,24 @@
     <div class="progress-table">
       <div class="table-head">
         <div class="serial">#</div>
-        <div class="location">Location</div>
-        <div class="count">Total</div>
-        <div class="count">New Cases</div>
-        <div class="count">Deaths</div>
-        <!-- <div class="count">New Deaths</div> -->
-        <div class="count">Recovered</div>
-        <div class="count">Active</div>
-        <div class="count">Total Tests</div>
+        <div class="location">Location<i (click)='this.sortCases("location")' [ngClass]="setSortClass()"></i></div>
+        <div class="count">Total<i (click)='this.sortCases("total")' [ngClass]="setSortClass()"></i></div>
+        <div class="count">New Cases<i (click)='this.sortCases("newcases")' [ngClass]="setSortClass()"></i></div>
+        <div class="count">Deaths<i (click)='this.sortCases("deaths")' [ngClass]="setSortClass()"></i></div>
+        <div class="count">New Deaths<i (click)='this.sortCases("newdeaths")' [ngClass]="setSortClass()"></i></div>
+        <div class="count">Recovered<i (click)='this.sortCases("recovered")' [ngClass]="setSortClass()"></i></div>
+        <div class="count">Active<i (click)='this.sortCases("active")' [ngClass]="setSortClass()"></i></div>
+        <div class="count">Total Tests<i (click)='this.sortCases("tests")' [ngClass]="setSortClass()"></i></div>
       </div>
       <div class="table-row" *ngFor='let case of cases; let i=index'>
         <div class="serial">{{i+ 1}}</div>
         <div class="location">{{case.location}}</div>
-        <div class="count">{{case.total}}</div>
+        <div class="count total">{{case.total}}</div>
         <div class="count">{{case.newcases}}</div>
-        <div class="count">{{case.deaths}}</div>
-        <!-- <div class="count">{{case.newdeaths}}</div> -->
-        <div class="count">{{case.recovered}}</div>
+        <div class="count deaths">{{case.deaths}}</div>
+
+        <div class="count">{{case.newdeaths}}</div>
+        <div class="count recovered">{{case.recovered}}</div>
         <div class="count">{{case.active}}</div>
         <div class="count">{{case.tests}}</div>
       </div>
@@ -107,6 +108,8 @@
         <li>https://thane.nic.in/</li>
         <li>https://www.nmmc.gov.in/navimumbai/</li>
         <li>https://www.mbmc.gov.in/</li>
+        <li>https://vvcmc.in/vvmc/</li>
+        <li>http://panvelcovidcare.cdaat.in/</li>
       </ul>
     </div>
     <div class="list-wrap">

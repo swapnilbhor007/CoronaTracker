@@ -4535,3 +4535,9 @@ cursor: pointer;
 .footer-text a, .footer-text i {
   color: #f8b600;
 }
+
+.sticky{
+  position: sticky;
+  top: 100px;
+  z-index: 10000;
+}

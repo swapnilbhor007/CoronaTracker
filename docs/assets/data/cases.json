@@ -1,50 +1,50 @@
 [{
     "id" : 1,
     "location": "Badlapur",
-    "total": 138,
-    "newcases": 14,
-    "deaths": 3,
+    "total": 147,
+    "newcases": 9,
+    "deaths": 4,
     "newdeaths": 1,
-    "recovered": 41,
-    "active": 94,
-    "tests": 350,
-    "eventDate": "5/21/2020"
+    "recovered": 43,
+    "active": 100,
+    "tests": 366,
+    "eventDate": "5/22/2020"
 },
 {
     "id" : 2,
     "location": "Ambernath",
-    "total": 48,
-    "newcases": 1,
+    "total": 54,
+    "newcases": 6,
     "deaths": 1,
     "newdeaths": "",
     "recovered": 16,
-    "active": 31,
-    "tests": 482,
-    "eventDate": "5/21/2020"
+    "active": 37,
+    "tests": 558,
+    "eventDate": "5/22/2020"
 },
 {
     "id" : 3,
     "location": "Ulhasnagar",
-    "total": 144,
-    "newcases": 7,
+    "total": 156,
+    "newcases": 2,
     "deaths": 5,
     "newdeaths": "",
-    "recovered": 33,
-    "active": 106,
+    "recovered": 40,
+    "active": 111,
     "tests": "",
-    "eventDate": "5/20/2020"
+    "eventDate": "5/22/2020"
 },
 {
     "id" : 4,
     "location": "Kalyan-Dombivali",
-    "total": 642,
-    "newcases": 48,
-    "deaths": 17,
-    "newdeaths": 2,
-    "recovered": 242,
-    "active": 383,
+    "total": 699,
+    "newcases": 57,
+    "deaths": 18,
+    "newdeaths": 1,
+    "recovered": 255,
+    "active": 426,
     "tests": "",
-    "eventDate": "5/21/2020"
+    "eventDate": "5/22/2020"
 },
 {
     "id" : 5,
@@ -85,14 +85,14 @@
 {
     "id" : 8,
     "location": "Vasai Virar",
-    "total": 410,
-    "newcases": 24,
+    "total": 435,
+    "newcases": 25,
     "deaths": 17,
     "newdeaths": "",
-    "recovered": 211,
-    "active": 182,
-    "tests": 2794,
-    "eventDate": "5/21/2020"
+    "recovered": 219,
+    "active": 199,
+    "tests": 2878,
+    "eventDate": "5/22/2020"
 },
 {
     "id" : 9,

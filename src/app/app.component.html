@@ -74,14 +74,14 @@
   </div>
   <div class="progress-table-wrap">
     <div class="progress-table">
-      <div class="table-head">
+      <div class="table-head sticky">
         <div class="serial">#</div>
         <div class="location">Location<i (click)='this.sortCases("location")' [ngClass]="setSortClass()"></i></div>
         <div class="count">Total<i (click)='this.sortCases("total")' [ngClass]="setSortClass()"></i></div>
         <div class="count">New<i (click)='this.sortCases("newcases")' [ngClass]="setSortClass()"></i></div>
         <div class="count">Deaths<i (click)='this.sortCases("deaths")' [ngClass]="setSortClass()"></i></div>
         <!-- <div class="count">New Deaths<i (click)='this.sortCases("newdeaths")' [ngClass]="setSortClass()"></i></div> -->
-        <div class="count">Recovered<i (click)='this.sortCases("recovered")' [ngClass]="setSortClass()"></i></div>
+        <div class="count">Recov.<i (click)='this.sortCases("recovered")' [ngClass]="setSortClass()"></i></div>
         <div class="count">Active<i (click)='this.sortCases("active")' [ngClass]="setSortClass()"></i></div>
         <div class="count">Tests<i (click)='this.sortCases("tests")' [ngClass]="setSortClass()"></i></div>
       </div>

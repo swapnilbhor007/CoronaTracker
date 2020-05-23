@@ -6,9 +6,11 @@
     "deaths": 4,
     "newdeaths": 1,
     "recovered": 43,
+    "newrecovered":"",
     "active": 100,
     "tests": 366,
-    "eventDate": "5/22/2020"
+    "newtests": "",
+    "recordDate": "5/22/2020"
 },
 {
     "id" : 2,
@@ -18,9 +20,11 @@
     "deaths": 1,
     "newdeaths": "",
     "recovered": 16,
+    "newrecovered":"",
     "active": 37,
     "tests": 558,
-    "eventDate": "5/22/2020"
+    "newtests": "",
+    "recordDate": "5/22/2020"
 },
 {
     "id" : 3,
@@ -30,9 +34,11 @@
     "deaths": 5,
     "newdeaths": "",
     "recovered": 40,
+    "newrecovered":"",
     "active": 111,
     "tests": "",
-    "eventDate": "5/22/2020"
+    "newtests": "",
+    "recordDate": "5/22/2020"
 },
 {
     "id" : 4,
@@ -42,9 +48,11 @@
     "deaths": 18,
     "newdeaths": 1,
     "recovered": 255,
+    "newrecovered":"",
     "active": 426,
     "tests": "",
-    "eventDate": "5/22/2020"
+    "newtests": "",
+    "recordDate": "5/22/2020"
 },
 {
     "id" : 5,
@@ -54,9 +62,11 @@
     "deaths": 63,
     "newdeaths": 2,
     "recovered": 586,
+    "newrecovered":"",
     "active": 1108,
     "tests": "",
-    "eventDate": "5/22/2020"
+    "newtests": "",
+    "recordDate": "5/22/2020"
 },
 {
     "id" : 6,
@@ -66,9 +76,11 @@
     "deaths": 49,
     "newdeaths": 2,
     "recovered": 620,
+    "newrecovered":"",
     "active": 818,
     "tests": "",
-    "eventDate": "5/22/2020"
+    "newtests": "",
+    "recordDate": "5/22/2020"
 },
 {
     "id" : 7,
@@ -78,9 +90,11 @@
     "deaths": 12,
     "newdeaths": 0,
     "recovered": 263,
+    "newrecovered":"",
     "active": 179,
     "tests": 2069,
-    "eventDate": "5/22/2020"
+    "newtests": "",
+    "recordDate": "5/22/2020"
 },
 {
     "id" : 8,
@@ -90,9 +104,11 @@
     "deaths": 17,
     "newdeaths": "",
     "recovered": 219,
+    "newrecovered":"",
     "active": 199,
     "tests": 2878,
-    "eventDate": "5/22/2020"
+    "newtests": "",
+    "recordDate": "5/22/2020"
 },
 {
     "id" : 9,
@@ -102,8 +118,24 @@
     "deaths": 15,
     "newdeaths": 1,
     "recovered": 182,
+    "newrecovered":"",
     "active": 135,
     "tests": 2156,
-    "eventDate": "5/22/2020"
+    "newtests": "",
+    "recordDate": "5/22/2020"
+},
+{
+    "id" : 10,
+    "location": "Mumbai",
+    "total": 27068,
+    "newcases": 1751,
+    "deaths": 909,
+    "newdeaths": 27,
+    "recovered": 7080,
+    "newrecovered":329,
+    "active": 19079,
+    "tests": "",
+    "newtests": "",
+    "recordDate": "5/22/2020"
 }
 ]

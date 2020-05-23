@@ -6,7 +6,9 @@ export interface ICase{
     deaths: number,
     newdeaths: number,
     recovered: number,
+    newrecovered: number,
     active: number,
     tests: number,
-    eventDate: Date
+    newtests:number,
+    recordDate: Date
 }

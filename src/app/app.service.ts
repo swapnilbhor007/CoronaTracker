@@ -14,7 +14,7 @@ export class TrackerService {
 
     //private dataUrl = 'assets/data/cases.json';
 
-    private dataUrl = 'https://api.npoint.io/f47d4c27a7c5d72f962c';
+    private dataUrl = 'https://api.npoint.io/632184653ada90515889';
 
     getCases(): Observable<ICase[]> {
         return this.httpClient.get<ICase[]>(this.dataUrl).pipe(

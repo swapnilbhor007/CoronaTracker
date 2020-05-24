@@ -84,6 +84,7 @@
         <div class="count">Recov.<i (click)='this.sortCases("recovered")' [ngClass]="setSortClass()"></i></div>
         <div class="count">Active<i (click)='this.sortCases("active")' [ngClass]="setSortClass()"></i></div>
         <div class="count">Tests<i (click)='this.sortCases("tests")' [ngClass]="setSortClass()"></i></div>
+        <div class="count">Details</div>
       </div>
       <div class="table-row" *ngFor='let case of cases; let i=index'>
         <div class="serial">{{i+ 1}}</div>
@@ -95,6 +96,7 @@
         <div class="count recovered">{{case.recovered}}</div>
         <div class="count">{{case.active}}</div>
         <div class="count">{{case.tests}}</div>
+        <div class="count"><a target="_blank" *ngIf='case.source' [href]="case.source">[source]</a></div>
       </div>
     </div>
   </div>

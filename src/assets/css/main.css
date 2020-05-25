@@ -1234,11 +1234,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .progress-table .location {
-  width: 20%;
+  width: 17%;
 }
 
 .progress-table .count {
-  width: 12%;
+  width: 13%;
+}
+
+.progress-table .details {
+  width: 10%;
 }
 
 /* .progress-table .count.total{
@@ -1253,11 +1257,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #20b85a!important;
 } */
 
-.progress-table .percentage {
-  width: 40.36%;
-  padding-right: 50px;
-}
-
 .progress-table .table-head {
   display: flex;
 }
@@ -1267,7 +1266,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-.progress-table .table-head .serial, .progress-table .table-head .location, .progress-table .table-head .count, .progress-table .table-head .percentage {
+.progress-table .table-head .serial, .progress-table .table-head .location, .progress-table .table-head .count, .progress-table .table-head .details {
   color:#FFF;
   line-height: 40px;
   /* text-transform: uppercase; */
@@ -1275,15 +1274,48 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f8b600;
 }
 
-.progress-table .table-row {
-  padding: 15px 0;
-  border-top: 1px solid #edf3fd;
-  display: flex;
+.progress-table .table-head .count, .progress-table .table-head .details{
+ text-align: center;
 }
 
-.progress-table .table-row .serial, .progress-table .table-row .location, .progress-table .table-row .count, .progress-table .table-row .percentage {
+.progress-table .table-row {
+  padding: 15px 5px;
+  border-top: 1px solid #edf3fd;
   display: flex;
-  align-items: center;
+  text-align: right;
+}
+
+.progress-table .table-row .serial, .progress-table .table-row .location {
+  /*display: flex;
+  align-items: center; */
+  text-align: left!important;
+}
+
+.progress-table .table-row .count{
+  /*display: flex;
+  align-items: center; */
+  padding-right: 20px!important;
+}
+
+.progress-table .table-row .details{
+  /*display: flex;
+  align-items: center; */
+  text-align: center!important;
+}
+
+
+.count span{
+  padding: 5px!important;
+  color:#f44a40;
+  font-size: 12px;
+}
+
+.count.recovered span{
+  color:#17e65c;
+}
+
+.count.tests span{
+  color:#f8b600;
 }
 
 .progress-table .table-row .location img {

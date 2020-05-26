@@ -16,6 +16,13 @@ export class AppComponent implements OnInit {
   showModal: boolean;
   imageUrl:string;
 
+   constructor(private trackerService: TrackerService) { }
+
+  ngOnInit() {
+    this.getCases();
+    this.todaysDate = new Date();
+  }
+
   show(imgUrl:string)
   {
     this.showModal = true; // Show-Hide Modal Check
@@ -26,13 +33,6 @@ export class AppComponent implements OnInit {
   hide()
   {
     this.showModal = false;
-  }
-
-  constructor(private trackerService: TrackerService) { }
-
-  ngOnInit() {
-    this.getCases();
-    this.todaysDate = new Date();
   }
 
   getCases() {

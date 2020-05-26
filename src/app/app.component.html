@@ -89,10 +89,16 @@
         <div class="location">{{case.location}}</div>
         <div class="count total"><span *ngIf='case.newcases'>+{{case.newcases}}</span>{{case.total}}</div>
         <div class="count deaths"><span *ngIf='case.newdeaths'>+{{case.newdeaths}}</span>{{case.deaths}}</div>
-        <div class="count recovered"><span *ngIf='case.newrecovered'>+{{case.newrecovered}}</span>{{case.recovered}}</div>
+        <div class="count recovered"><span *ngIf='case.newrecovered'>+{{case.newrecovered}}</span>{{case.recovered}}
+        </div>
         <div class="count">{{case.active}}</div>
         <div class="count tests"><span *ngIf='case.newtests'>+{{case.newtests}}</span>{{case.tests}}</div>
-        <div class="details"><a target="_blank" *ngIf='case.source' [href]="case.source">[source]</a></div>
+        <div class="details">
+          <!-- <a target="_blank" *ngIf='case.source' [href]="case.source">[source]</a> -->
+          <a href="#" (click)="show(case.source)">
+            <img id="imageresource" [src]="case.source" style="width: 15px; height: 15px;">
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -100,26 +106,52 @@
     <h3 class="mb-20">Sources of information</h3>
     <div class="list-wrap mb-20">
       <ul>
-        <li>The information is collected from the press releases of the respective municipal corporations, which is generally published daily after 6 p.m IST.</li>
+        <li>The information is collected from the press releases of the respective municipal corporations, which is
+          generally published daily after 6 p.m IST.</li>
       </ul>
     </div>
     <div class="mb-20">
       <ul class="unordered-list">
         <li><a target="_blank" href="https://stopcoronavirus.mcgm.gov.in/">Brihanmumbai Municipal Corporation</a></li>
-        <li><a target="_blank" href="https://kbmc.gov.in/EIPPROD/kbmc_Covid-19_jsp.jsp">Kulgaon Badlapur Municipal Corporation</a></li>
-        <li><a target="_blank" href="https://kdmc-coronavirus-response-skdcl.hub.arcgis.com/">Kalyan Dombivli Municipal Corporation</a></li>
+        <li><a target="_blank" href="https://kbmc.gov.in/EIPPROD/kbmc_Covid-19_jsp.jsp">Kulgaon Badlapur Municipal
+            Corporation</a></li>
+        <li><a target="_blank" href="https://kdmc-coronavirus-response-skdcl.hub.arcgis.com/">Kalyan Dombivli Municipal
+            Corporation</a></li>
         <li><a target="_blank" href="https://thane.nic.in/corona-virus-covid-19/">Thane Municipal Corporation</a></li>
         <li><a target="_blank" href="https://www.nmmc.gov.in/navimumbai/">Navi Mumbai Municipal Corporation</a></li>
         <li><a target="_blank" href="https://www.mbmc.gov.in/">Mira Bhayander Municipal Corporation</a></li>
-        <li><a target="_blank" href="https://vvcmc.in/vvmc/corona/local_host/index.html">Vasai Virar Municipal Corporation</a></li>
+        <li><a target="_blank" href="https://vvcmc.in/vvmc/corona/local_host/index.html">Vasai Virar Municipal
+            Corporation</a></li>
         <li><a target="_blank" href="http://panvelcovidcare.cdaat.in/">Panvel Municipal Corporation</a></li>
 
       </ul>
     </div>
     <div class="list-wrap">
       <ul>
-        <li>We are looking for contributers, if you are interested you can <a href="mailto:swapnilbhor007@gmail.com">email us</a> to join this social cause.</li>
+        <li>We are looking for contributers, if you are interested you can <a
+            href="mailto:swapnilbhor007@gmail.com">email us</a> to join this social cause.</li>
       </ul>
+    </div>
+  </div>
+
+</div>
+<!-- Creates the bootstrap modal where the image will appear -->
+<div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- <div class="modal-header">
+         <h4 class="modal-title" id="myModalLabel">Image preview</h4> 
+      </div> -->
+      <div class="modal-body">
+        <button type="button" style="float: right;" class="btn btn-default" data-dismiss="modal"
+          (click)="hide()">Close</button>
+        <img [src]="imageUrl" id="imagepreview" style="width: 470px;">
+      </div>
+      <!-- <div class="modal-footer">
+        
+      </div> -->
     </div>
   </div>
 </div>
@@ -134,10 +166,13 @@
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       </p>
       <div class="col-lg-4 col-sm-12 footer-social">
-     <!-- hitwebcounter Code START -->
-<a href="https://www.hitwebcounter.com" target="_blank">
-  <img src="https://hitwebcounter.com/counter/counter.php?page=7352245&style=0008&nbdigits=7&type=page&initCount=0" title="Web Counter" Alt="counter free"   border="0" >
-  </a>  <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+        <!-- hitwebcounter Code START -->
+        <a href="https://www.hitwebcounter.com" target="_blank">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=7352245&style=0008&nbdigits=7&type=page&initCount=0"
+            title="Web Counter" Alt="counter free" border="0">
+        </a>
+        <!-- <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
         <a href="#"><i class="fa fa-dribbble"></i></a>
         <a href="#"><i class="fa fa-behance"></i></a> -->

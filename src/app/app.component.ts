@@ -13,6 +13,20 @@ export class AppComponent implements OnInit {
   errorMessage: string;
   sortOrder: string = "DESC";
   todaysDate: Date;
+  showModal: boolean;
+  imageUrl:string;
+
+  show(imgUrl:string)
+  {
+    this.showModal = true; // Show-Hide Modal Check
+    this.imageUrl = imgUrl;
+    
+  }
+  //Bootstrap Modal Close event
+  hide()
+  {
+    this.showModal = false;
+  }
 
   constructor(private trackerService: TrackerService) { }
 

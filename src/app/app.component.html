@@ -75,7 +75,7 @@
   <div class="progress-table-wrap">
     <div class="progress-table">
       <div class="table-head sticky">
-        <div class="serial">#</div>
+        <!-- <div class="serial">#</div> -->
         <div class="location">Location<i (click)='this.sortCases("location")' [ngClass]="setSortClass()"></i></div>
         <div class="count">Total<i (click)='this.sortCases("total")' [ngClass]="setSortClass()"></i></div>
         <div class="count">Deaths<i (click)='this.sortCases("deaths")' [ngClass]="setSortClass()"></i></div>
@@ -85,7 +85,7 @@
         <div class="details">Details</div>
       </div>
       <div class="table-row" *ngFor='let case of cases; let i=index'>
-        <div class="serial">{{i+ 1}}</div>
+        <!-- <div class="serial">{{i+ 1}}</div> -->
         <div class="location">{{case.location}}</div>
         <div class="count total"><span *ngIf='case.newcases'>+{{case.newcases}}</span>{{case.total}}</div>
         <div class="count deaths"><span *ngIf='case.newdeaths'>+{{case.newdeaths}}</span>{{case.deaths}}</div>
@@ -95,14 +95,14 @@
         <div class="count tests"><span *ngIf='case.newtests'>+{{case.newtests}}</span>{{case.tests}}</div>
         <div class="details">
           <!-- <a target="_blank" *ngIf='case.source' [href]="case.source">[source]</a> -->
-          <a style="cursor: pointer;" (click)="show(case.source)">
-            <img id="imageresource" [src]="case.source" style="width: 15px; height: 15px;">
+          <a style="cursor: pointer;" *ngIf='case.source' (click)="show(case.source)">
+            <img class="source-img" [src]="case.source">
           </a>
         </div>
       </div>
     </div>
   </div>
-  <div class="col-md-12 mt-sm-30 mb-30 typo-sec">
+  <div class="col-md-12 mt-sm-30 mt-30 mb-30 typo-sec">
     <h3 class="mb-20">Sources of information</h3>
     <div class="list-wrap mb-20">
       <ul>
@@ -135,26 +135,20 @@
   </div>
 
 </div>
-<!-- Creates the bootstrap modal where the image will appear -->
-<div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog"
-  aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
 
-      <!-- <div class="modal-header">
-         <h4 class="modal-title" id="myModalLabel">Image preview</h4> 
-      </div> -->
-      <div class="modal-body">
-        <button type="button" style="float: right;" class="btn btn-default" data-dismiss="modal"
-          (click)="hide()">Close</button>
-        <img [src]="imageUrl" id="imagepreview" style="width: 475px;">
-      </div>
-      <!-- <div class="modal-footer">
-        
-      </div> -->
-    </div>
-  </div>
+<!-- The Modal -->
+<div class="modal" [style.display]="showModal ? 'block' : 'none'" >
+
+  <!-- The Close Button -->
+  <span class="close" (click)="hide()">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" [src]="imageUrl">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
 </div>
+
 
 <footer class="footer-area section-gap">
   <div class="container">

@@ -1223,26 +1223,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .progress-table {
-  background: #fff;
-  padding: 15px 0px 30px 0px;
+  background: #FFF;
+  padding: 15px 0px 15px 0px;
   min-width: 600px;
+  color: #000;
 }
 
 .progress-table .serial {
-  width: 8%;
+  width: 5%;
   padding-left: 30px;
 }
 
 .progress-table .location {
   width: 17%;
+  padding-left: 30px;
 }
 
 .progress-table .count {
-  width: 13%;
+  width: 15%;
 }
 
 .progress-table .details {
-  width: 10%;
+  width: 8%;
 }
 
 /* .progress-table .count.total{
@@ -1271,7 +1273,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 40px;
   /* text-transform: uppercase; */
   font-weight: 550!important;
-  background-color: #f8b600;
+  /* background-color: #f8b600; */
+  background-image: url("../img/banner.jpg");
 }
 
 .progress-table .table-head .count, .progress-table .table-head .details{
@@ -1285,16 +1288,26 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
-.progress-table .table-row .serial, .progress-table .table-row .location {
+.progress-table .table-row .serial {
   /*display: flex;
   align-items: center; */
   text-align: left!important;
+  border-right: 1px solid #f1f1f1!important;
+}
+
+.progress-table .table-row .location {
+  /*display: flex;
+  align-items: center; */
+  text-align: left!important;
+  padding-left: 10px!important;
+  border-right: 1px solid #f1f1f1!important;
 }
 
 .progress-table .table-row .count{
   /*display: flex;
   align-items: center; */
   padding-right: 20px!important;
+  border-right: 1px solid #f1f1f1!important;
 }
 
 .progress-table .table-row .details{
@@ -1311,7 +1324,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .count.recovered span{
-  color:#17e65c;
+  color:#53cc3d;
 }
 
 .count.tests span{

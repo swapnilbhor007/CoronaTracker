@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ICase } from './cases';
 import { TrackerService } from './app.service';
+import {RouterModule} from '@angular/router'
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class AppComponent implements OnInit {
   sortOrder: string = "DESC";
   todaysDate: Date;
   showModal: boolean;
-  imageUrl:string;
+  imageUrls:[string];
 
    constructor(private trackerService: TrackerService) { }
 
@@ -23,10 +24,10 @@ export class AppComponent implements OnInit {
     this.todaysDate = new Date();
   }
 
-  show(imgUrl:string)
+  show(imgUrls:[string])
   {
     this.showModal = true; // Show-Hide Modal Check
-    this.imageUrl = imgUrl;
+    this.imageUrls = imgUrls;
     
   }
   //Bootstrap Modal Close event

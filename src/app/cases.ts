@@ -11,5 +11,5 @@ export interface ICase{
     tests: number,
     newtests:number,
     recordDate: Date,
-    source: string
+    source: [string]
 }

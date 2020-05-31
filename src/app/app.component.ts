@@ -7,6 +7,7 @@ import { TrackerService } from './app.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
   title = 'Corona Tracker';
   cases: ICase[];
@@ -14,25 +15,42 @@ export class AppComponent implements OnInit {
   sortOrder: string = "DESC";
   todaysDate: Date;
   showModal: boolean;
-  imageUrl:string;
+  imageUrls: [string] = [""];
+  slideIndex: number = 1;
 
-   constructor(private trackerService: TrackerService) { }
+  constructor(private trackerService: TrackerService) { }
 
   ngOnInit() {
     this.getCases();
     this.todaysDate = new Date();
   }
 
-  show(imgUrl:string)
-  {
-    this.showModal = true; // Show-Hide Modal Check
-    this.imageUrl = imgUrl;
-    
+  show(imgUrls: [string]) {
+    this.showModal = true;
+    this.imageUrls = imgUrls;
+    //this.slideIndex = 1;
   }
-  //Bootstrap Modal Close event
-  hide()
-  {
+
+  hide() {
     this.showModal = false;
+    //this.slideIndex = 1;
+  }
+
+  moveSlides(n) {
+    this.showSlides(this.slideIndex += n);
+  }
+
+  showSlides(n) {
+    var slides = document.getElementsByClassName("carousel-item");
+
+    if (n > slides.length) { this.slideIndex = 1 }
+    if (n < 1) { this.slideIndex = slides.length }
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].className = slides[i].className.replace(" active", "");
+    }
+    console.log("slide index: ", this.slideIndex);
+    slides[this.slideIndex - 1].className += " active";
   }
 
   getCases() {

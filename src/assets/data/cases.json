@@ -12,7 +12,7 @@
       "newtests": 25,
       "tests": 479,
       "recordDate": "5/28/2020",
-      "source": ["https://pbs.twimg.com/media/EZRu03nXgAArI-f?format=jpg&name=large","https://pbs.twimg.com/media/EZHS5KtUYAAEuKH?format=jpg&name=medium"]
+      "source": ["https://pbs.twimg.com/media/EZRu03nXgAArI-f?format=jpg&name=large","https://pbs.twimg.com/media/EZHS5KtUYAAEuKH?format=jpg&name=medium","https://pbs.twimg.com/media/EZRqfJ2VcAA3tJF?format=jpg&name=large"]
     },
     {
       "id": 2,
@@ -28,4 +28,19 @@
       "tests": 719,
       "recordDate": "5/28/2020",
       "source": ["https://pbs.twimg.com/media/EZHS5KtUYAAEuKH?format=jpg&name=medium"]
+    },
+    {
+      "id": 3,
+      "location": "Ulhasnagar",
+      "newcases": 12,
+      "total": 204,
+      "newdeaths": 0,
+      "deaths": 7,
+      "newrecovered": 11,
+      "recovered": 96,
+      "active": 101,
+      "newtests": 25,
+      "tests": 479,
+      "recordDate": "5/28/2020",
+      "source": ["https://pbs.twimg.com/media/EZRu03nXgAArI-f?format=jpg&name=large","https://pbs.twimg.com/media/EZHS5KtUYAAEuKH?format=jpg&name=medium"]
     }  ]

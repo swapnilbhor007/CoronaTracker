@@ -12,9 +12,9 @@ export class TrackerService {
 
     constructor(private httpClient: HttpClient) { }
 
-    private dataUrl = 'assets/data/cases.json';
+    //private dataUrl = 'assets/data/cases.json';
 
-    //private dataUrl = 'https://api.npoint.io/632184653ada90515889';
+    private dataUrl = 'https://api.npoint.io/632184653ada90515889';
 
     getCases(): Observable<ICase[]> {
         return this.httpClient.get<ICase[]>(this.dataUrl).pipe(

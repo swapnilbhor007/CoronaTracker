@@ -5398,10 +5398,14 @@
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: transparent no-repeat center center;
+    width: 25px;
+    height: 25px;
     background-size: 100% 100%;
+    outline: black;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: black;
+    z-index: 999999;
   }
   
   .carousel-control-prev-icon {

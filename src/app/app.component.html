@@ -95,7 +95,7 @@
         <div class="count tests"><span *ngIf='case.newtests'>+{{case.newtests}}</span>{{case.tests}}</div>
         <div class="details">
           <!-- <a target="_blank" *ngIf='case.source' [href]="case.source">[source]</a> -->
-          <a style="cursor: pointer;" *ngIf='case.source' (click)="show(case.source)">
+          <a style="cursor: pointer;" *ngIf='case.source && case.source.length >= 1' (click)="show(case.source)">
             <img class="source-img" [src]="case.source[0]">
           </a>
         </div>

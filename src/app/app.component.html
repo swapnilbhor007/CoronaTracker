@@ -70,7 +70,7 @@
     </div>
   </div>
   <div>
-    <h4>Corona cases as of {{ todaysDate | date:'mediumDate'}}</h4>
+    <h4>Corona cases as of {{ lastUpdated | date:'mediumDate'}}</h4>
   </div>
   <div class="progress-table-wrap">
     <div class="progress-table">
@@ -92,7 +92,7 @@
         <div class="count recovered"><span *ngIf='case.newrecovered'>+{{case.newrecovered | number: '2.'}}</span>{{case.recovered | number: '2.'}}
         </div>
         <div class="count">{{case.active | number: '2.'}}</div>
-        <div class="count tests"><span *ngIf='case.newtests'>+{{case.newtests | number: '2.'}}</span>{{case.tests | number: '2.'}}</div>
+        <div class="count tests"><span *ngIf='case.newtests'>+{{case.newtests | number: '2.'}}</span>{{ case.tests > 0 ?  (case.tests | number: '2.') : ''}}</div>
         <div class="details">
           <!-- <a target="_blank" *ngIf='case.source' [href]="case.source">[source]</a> -->
           <a style="cursor: pointer;" *ngIf='case.source && case.source.length >= 1' (click)="show(case.source)">
@@ -140,7 +140,7 @@
     <div class="list-wrap">
       <ul>
         <li>We are looking for contributers, if you are interested you can <a
-            href="mailto:swapnilbhor007@gmail.com">email us</a> to join this social cause.</li>
+            href="mailto:swapnilbhor007@gmail.com?subject=Corona Tracker&body=Hi Team">email us</a> to join this social cause.</li>
       </ul>
     </div>
   </div>

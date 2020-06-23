@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   cases: ICase[];
   errorMessage: string;
   sortOrder: string = "DESC";
-  todaysDate: Date;
+  lastUpdated: Date;
   showModal: boolean;
   imageUrls: [string] = [""];
   slideIndex: number = 1;
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.getCases();
-    this.todaysDate = new Date();
+    this.lastUpdated = new Date();
   }
 
   show(imgUrls: [string]) {
@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
     for (var i = 0; i < slides.length; i++) {
       slides[i].className = slides[i].className.replace(" active", "");
     }
-    console.log("slide index: ", this.slideIndex);
+    //console.log("slide index: ", this.slideIndex);
     slides[this.slideIndex - 1].className += " active";
   }
 

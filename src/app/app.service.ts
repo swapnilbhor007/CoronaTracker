@@ -8,6 +8,9 @@ import { ICase } from "./cases";
   providedIn: "root",
 })
 export class TrackerService {
+
+  //lastUpdated: Date;
+
   constructor(private httpClient: HttpClient) {}
 
   //private dataUrl = 'assets/data/cases.json';
@@ -15,12 +18,12 @@ export class TrackerService {
   //private dataUrl = 'https://api.npoint.io/632184653ada90515889';
 
   private dataUrl =
-    "https://spreadsheets.google.com/feeds/list/1iKSy3NlJ_4uuPEHdf4gRzLdWAu-Zcv7XwgprUJCnYq8/ochik02/public/full?alt=json";
+    "https://spreadsheets.google.com/feeds/list/165B08xhYYPwByiVJy8-_zjQKU9qi5gzBN7e6hiRwMNs/od6/public/values?alt=json";
 
   getCases(): Observable<ICase[]> {
     return this.httpClient.get<ICase[]>(this.dataUrl).pipe(
       map(data => this.parseObject(data)),
-      //tap((data) => console.log("Cases:" + JSON.stringify(data))),
+     //tap((data) => console.log("Cases:" + JSON.stringify(data))),
       catchError(this.handleError)
     );
   }
@@ -36,16 +39,8 @@ export class TrackerService {
     return throwError(errorMessage);
   }
 
-//   parseObject(obj) {
-//     for (var key in obj) {
-//       console.log("key: " + key + ", value: " + obj[key]);
-//       if (obj[key] instanceof Object) {
-//         this.parseObject(obj[key]);
-//       }
-//     }
-//   }
-
  parseObject(obj) : any {
+  // this.lastUpdated = obj.feed.updated.$t;
     var obj1 = obj.feed.entry;
     var str = "[";
     for (var i=0; i < obj1.length; i++) {
